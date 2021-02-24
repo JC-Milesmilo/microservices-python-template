@@ -19,12 +19,12 @@ app.config.from_object(DevelopmentConfig())
 
 DevelopmentConfig.URI_MONGO(app)
 
-#mongo_init = mongoengine_proj
 mongoengine_proj.initialize_db(app)
 
 init_route = viewsTemplate()
 
 init_route.initialize_routes(api)
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
