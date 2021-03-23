@@ -18,7 +18,7 @@ class ExampleApi(Resource):
     Class that contains the definition for the api/example routes
     '''
     @staticmethod
-    def get(self):
+    def get():
         '''
         Returns all documents from the collection
         '''
@@ -26,7 +26,7 @@ class ExampleApi(Resource):
         return Response(name, mimetype="application/json",status=200)
 
     @staticmethod
-    def post(self):
+    def post():
         '''
         Creates a document in the collection
         '''
